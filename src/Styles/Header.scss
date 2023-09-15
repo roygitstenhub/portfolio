@@ -1,0 +1,61 @@
+nav{
+    width: 100%;
+    height: 120px;
+    background-color: $color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $p;
+    position: sticky;
+    top: 0%;
+    z-index: 60;
+    text-transform: capitalize;
+    
+    >h2{
+        font-size: 24px;
+    }
+    >div{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        >a{
+            color: $color6;
+            font-weight: 400;
+            transition: all .3s;
+            letter-spacing: 1px;
+
+            &:hover{
+                color: $color3;
+            }
+        }
+
+
+        > a > button{
+          border: 1px solid $color6_1;
+          padding: 8px 16px;
+          cursor: pointer;
+          background-color: $color1;
+          color: $color6;
+          font-weight: 500;
+          transition: all 0.3s;
+          letter-spacing: 1px;
+          
+          &:hover{
+            background-color: $color6;
+            color: $color4;
+          }
+    }
+
+       
+    }
+}
+
+.hamberger{
+  display:none;
+  font-size: 28px;
+  color:$color3;
+  z-index:1000;
+  position: fixed;
+  top: 44px;
+  right: 16px;
+}

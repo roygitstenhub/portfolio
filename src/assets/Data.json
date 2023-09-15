@@ -1,0 +1,43 @@
+{
+    "projects": [
+      {
+        "date": "07/5/2023",
+        "title": "TECH STAR",
+        "description": "this is the landing page website which helps us to understand the framework of the website development ",
+        "url": "https://react-basic-site-roy06.netlify.app",
+        "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
+      },
+  
+      {
+        "date": "10/5/2023",
+        "title": "VIDEO HUB",
+        "description": "this website helps the user to navigate through webpages smoothly and also displaying the list of vedios and to have the hassel free experience.",
+        "url": "https://vediohub-react-site-roy06.netlify.app",
+        "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
+      },
+      
+      {
+        "date": "13/10/2023",
+        "title": "XCrypto",
+        "description": "This website display's the real time change in the value of diffrent crypto currencies,in turn helping us to make an informed decision on investments.",
+        "url": "https://react-crypto-app-pi.vercel.app",
+        "imgSrc": "https://cdn.pixabay.com/photo/2017/12/12/12/44/bitcoin-3014614_960_720.jpg"
+      },
+  
+      {
+        "date": "4/07/2023",
+        "title": "RESTAURENT WEBSITE",
+        "description": "this website helps to ease the process of choosing diffrent cuisines in a restaurent, thereby increasing efficiency and reducing time.",
+        "url": "https://restaurant-demo-roy06.netlify.app",
+        "imgSrc": "https://cdn.pixabay.com/photo/2021/02/08/07/39/chef-5993951_1280.jpg"
+      },
+
+      {
+        "date": "17/07/2023",
+        "title": "PORTFOLIO",
+        "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write.",
+        "url": "/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      }
+    ]
+  }

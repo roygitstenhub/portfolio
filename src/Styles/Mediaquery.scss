@@ -1,0 +1,539 @@
+//Small Size Devices
+@media only screen and (max-width:600px) {
+
+    //header section
+    nav {
+
+        position: sticky;
+        top: 0%;
+        z-index: 60;
+        padding: 0px $p_sm;
+
+        >div {
+            display: none;
+        }
+
+    }
+
+    .hamberger {
+        display: inline;
+    }
+
+    //home section
+
+    #home {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 120vh;
+        justify-content: center;
+
+        >section {
+
+            &:first-of-type {
+                padding-left: 12px;
+
+                >div {
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 22px;
+
+                    >h1 {
+                        font-size: 34px;
+                        padding-top: 16px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+
+                    .typewriterpara {
+                        width: 100%;
+                        height: 30px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                    }
+
+                    >div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    article {
+                        
+                        &::after {
+                            left: 0%;
+                        }
+                    }
+
+
+                    >aside {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content:space-between;
+                        flex-direction: column;
+                        gap:24px;
+                    }
+                }
+
+            }
+
+            &:last-of-type {
+                justify-content: flex-end;
+
+                &::after{
+                    background-size: contain; 
+                }
+
+                >img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+
+    }
+
+
+    //work section
+    #work {
+        height: 100vh;
+        padding: 0px $p_sm;
+
+        >section {
+            width: 100%;
+            height: 80%;
+            padding: 12px;
+            margin: auto;
+
+            >article {
+                width: 100%;
+                padding: 8px;
+
+                .workitem {
+                    width: 100%;
+                    height: 70vmax;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    >img {
+                        width: 200px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        margin-bottom: 15px;
+                    }
+
+                    >aside {
+                        gap: 10px;
+
+                        >p {
+                            letter-spacing: 0px;
+                            padding: 0 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    //timeline section
+
+    #timeline {
+        height: 120vh;
+        .timeline-box {
+
+            &::after {
+                left: 30px;
+            }
+        }
+
+        .timeline-item {
+            width: 100%;
+            margin-top: 32px;
+
+            >div {
+                margin-left: 36px;
+                >span{
+                    font-size: 10px;
+                }
+            }
+
+        }
+
+        .right-timeline {
+            left: 0px;
+        }
+
+        .right-timeline,
+        .left-timeline {
+            &::after {
+                left: 18px;
+            }
+
+        }
+
+    }
+
+    //services section
+    #services {
+        height: 100vh;
+        padding: 10px;
+
+        >h2 {
+            padding: 16px 8px;
+        }
+
+        >section {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+
+            >* {
+                padding: 12px;
+            }
+
+        }
+    }
+
+    .serviceItem1 {
+        grid-column: 1 / 3;
+        grid-row: unset;
+    }
+
+    .serviceItem4 {
+        grid-column: 1/ 3;
+    }
+
+
+    //testimonial
+    #testimonial {
+        height: unset;
+
+        >section {
+            width: 100%;
+            flex-direction: column;
+
+            >div {
+                width: 90%;
+                height: 300px;
+                margin-top: 80px;
+            }
+        }
+    }
+
+
+    //contact section
+    #contact {
+        grid-template-columns: 1fr;
+
+        >section {
+
+            >form {
+
+                input,
+                button {
+                    width: 100%;
+                }
+            }
+
+        }
+
+    }
+
+    //Footer section
+    #footer {
+        grid-template-columns: 1fr;
+        padding: 16px $p_sm;
+        gap: 40px;
+
+        >section {
+            border: unset;
+
+            >p {
+                text-align: center;
+            }
+            >h3{
+                font-size: 16px;
+                  
+            }
+        }
+
+        >article {
+            >div {
+                flex-direction: row;
+                gap: 18px;
+
+                a {
+                    svg {
+                        color: white;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+//media-end-point
+
+
+//Medimum Size Devices
+@media (min-width:768px) and (max-width:992px) {
+    nav {
+        width: unset;
+        position: sticky;
+        top: 0%;
+        z-index: 60;
+        padding: 0px $p_md;
+
+        >div {
+            display: none;
+        }
+
+    }
+
+    .hamberger {
+        display: inline;
+    }
+
+    //Home section
+    #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        >section {
+
+            &:first-of-type {
+                padding-left: $p_md;
+
+                >div {
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+
+                    >h1 {
+                        font-size: 34px;
+                        padding-top: 16px;
+                        font-weight: 700;
+                        text-align: center;
+                    }
+
+                    .typewriterpara {
+                        width: 100%;
+                        height: 40px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                    }
+
+                    >div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    article {
+                        &::after {
+                            left: 0%;
+                        }
+                    }
+
+
+                    >aside {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: space-between;
+                        gap: 8px;
+                    }
+                }
+
+
+            }
+
+            &:last-of-type {                
+
+                &::after {
+                    width: 80%;
+                    height: 100%;
+
+                }
+
+                >img {
+                    width: 350px;
+                }
+            }
+        }
+
+    }
+
+
+    //Work Section
+    #work {
+        height: 100vh;
+        padding: 0px $p_md;
+
+        >section {
+
+            >article {
+                width: 80%;
+                height: 80%;
+                padding: 8px;
+
+                .workitem {
+                    width: 95%;
+                    margin: auto;
+                    height: 65vmax;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    >img {
+                        width: 350px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        margin-bottom: 15px;
+                    }
+
+                    >aside {
+                        gap: 20px;
+
+                        >p {
+                            letter-spacing: 0px;
+                            padding: 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    //timeline section
+    #timeline {
+
+        .timeline-box {
+            .timeline-item {
+                margin-top: 52px;
+               
+                >div {
+                    >span{
+                        font-size: 12px;
+                    }
+                }
+    
+            }
+            
+        }
+       
+    }
+
+    //service section
+    #services {
+        height: 100vh;
+        padding: 10px;
+
+        >h2 {
+            padding: 16px 8px;
+        }
+
+        >section {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+
+            >* {
+                padding: 12px;
+            }
+
+        }
+    }
+
+    .serviceItem1 {
+        grid-column: 1 / 4;
+        grid-row: unset;
+    }
+
+    .serviceItem4 {
+        grid-column: 1/ 4;
+    }
+
+    .serviceItem2 {
+        grid-column: 1 / 3;
+    }
+
+
+    //Footer section
+    #footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 16px $p_md;
+        gap: 40px;
+
+        >section {
+            grid-column: 1 / 3;
+            border: unset;
+
+            >p {
+                text-align: center;
+
+            }
+        }
+
+        >article {
+            grid-column: 1 / 3;
+
+            >div {
+                flex-direction: row;
+                gap: 18px;
+            }
+        }
+
+        >p {
+            grid-column: 1 / 3;
+        }
+    }
+
+    //Testinomial Section
+    #testimonial {
+        height: unset;
+
+        >section {
+            width: 100%;
+            flex-direction: column;
+
+            >div {
+                width: 70%;
+                height: 300px;
+                margin-top: 80px;
+            }
+        }
+    }
+
+    //contact section
+    #contact {
+        grid-template-columns: 1fr;
+
+        >section {
+
+            >form {
+
+                input,
+                button {
+                    width: 80%;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+//End Point
